@@ -248,7 +248,7 @@ for x0 in [0.3, 0.45]:
         x_new = G(x)
         
         # Convergence achieved
-        if abs(x_new - x) > 1.0e-14:
+        if abs(x_new - x) < 1.0e-14:
             break
         
         # Update for next iteration
